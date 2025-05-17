@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 
 public record RequestAnimalDto(
         @NotBlank String name,
-        @NotNull Integer idade,
+        @NotNull Integer age,
         @NotNull AnimalType animalType
 ) {
 }

@@ -18,7 +18,7 @@ public class Animal {
     private String name;
 
     @NotNull
-    private Integer idade;
+    private Integer age;
 
     @NotNull
     private AnimalType animalType;
@@ -26,9 +26,9 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(String name, Integer idade, AnimalType animalType) {
+    public Animal(String name, Integer age, AnimalType animalType) {
         this.name = name;
-        this.idade = idade;
+        this.age = age;
         this.animalType = animalType;
     }
 
@@ -48,12 +48,12 @@ public class Animal {
         this.name = name;
     }
 
-    public Integer getIdade() {
-        return idade;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setIdade(Integer idade) {
-        this.idade = idade;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public AnimalType getAnimalType() {
@@ -81,7 +81,7 @@ public class Animal {
         return "Animal{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", idade='" + idade + '\'' +
+                ", age='" + age + '\'' +
                 ", animalType=" + animalType.name() +
                 '}';
     }

@@ -6,11 +6,11 @@ import br.dev.hygino.model.AnimalType;
 public record ResponseAnimalDto(
         Long id,
         String name,
-        Integer idade,
+        Integer age,
         AnimalType animalType
 ) {
 
     public ResponseAnimalDto(Animal animal) {
-        this(animal.getId(), animal.getName(), animal.getIdade(), animal.getAnimalType());
+        this(animal.getId(), animal.getName(), animal.getAge(), animal.getAnimalType());
     }
 }

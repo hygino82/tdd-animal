@@ -1,0 +1,11 @@
+INSERT INTO tb_animal(name,age,animal_type) VALUES ('Morgana',2,1);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Rex', 5, 0);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Luna', 3, 1);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Bolinha', 1, 2);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Thor', 4, 0);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Mel', 2, 1);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Pipoca', 6, 2);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Simba', 7, 0);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Nina', 1, 1);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Frajola', 9, 2);
+INSERT INTO tb_animal(name, age, animal_type) VALUES ('Bidu', 3, 0);
