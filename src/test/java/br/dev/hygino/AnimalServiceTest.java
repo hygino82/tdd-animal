@@ -148,7 +148,6 @@ public class AnimalServiceTest {
     @Test
     public void deleteShouldDoNothingWhenIdExists() {
         assertDoesNotThrow(() -> animalService.delete(existingId));
-
         verify(animalRepository, times(1)).deleteById(existingId);
     }
 }
