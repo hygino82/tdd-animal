@@ -26,6 +26,13 @@ public class Animal {
     public Animal() {
     }
 
+    public Animal(Long id, String name, Integer age, AnimalType animalType) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.animalType = animalType;
+    }
+
     public Animal(String name, Integer age, AnimalType animalType) {
         this.name = name;
         this.age = age;
