@@ -1,8 +1,7 @@
-package br.dev.hygino;
+package br.dev.hygino.repository;
 
 import br.dev.hygino.model.Animal;
 import br.dev.hygino.model.AnimalType;
-import br.dev.hygino.repository.AnimalRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

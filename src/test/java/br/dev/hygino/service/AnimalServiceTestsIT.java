@@ -1,11 +1,10 @@
-package br.dev.hygino;
+package br.dev.hygino.service;
 
 import br.dev.hygino.dto.RequestAnimalDto;
 import br.dev.hygino.dto.ResponseAnimalDto;
 import br.dev.hygino.factory.AnimalFactory;
 import br.dev.hygino.model.AnimalType;
 import br.dev.hygino.repository.AnimalRepository;
-import br.dev.hygino.service.AnimalService;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.Validator;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
-public class AnimalRepositoryTestsIT {
+public class AnimalServiceTestsIT {
     @Autowired
     private AnimalRepository animalRepository;
 

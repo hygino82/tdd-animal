@@ -1,6 +1,7 @@
 package br.dev.hygino.factory;
 
 import br.dev.hygino.dto.RequestAnimalDto;
+import br.dev.hygino.dto.ResponseAnimalDto;
 import br.dev.hygino.model.Animal;
 import br.dev.hygino.model.AnimalType;
 
@@ -27,5 +28,18 @@ public class AnimalFactory {
 
     public static RequestAnimalDto createInsertRequestAnimalDto() {
         return new RequestAnimalDto("Saci", 4, AnimalType.CAT);
+    }
+
+    public static List<ResponseAnimalDto> createResponseAnimalDtoList() {
+        return Arrays.asList(
+                new ResponseAnimalDto(1L, "Saci", 4, AnimalType.CAT),
+                new ResponseAnimalDto(2L, "Bender", 1, AnimalType.DOG),
+                new ResponseAnimalDto(3L, "Rico", 30, AnimalType.PARROT),
+                new ResponseAnimalDto(4L, "Ozzy", 1, AnimalType.CAT)
+        );
+    }
+
+    public static ResponseAnimalDto createResponseAnimalDto() {
+        return new ResponseAnimalDto(1L, "Saci", 4, AnimalType.CAT);
     }
 }

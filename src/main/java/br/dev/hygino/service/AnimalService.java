@@ -32,7 +32,7 @@ public class AnimalService {
 
     @Transactional(readOnly = true)
     public ResponseAnimalDto findById(Long id) {
-        final var res = animalRepository.findById(id)
+        final Animal res = animalRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Não existe animal com o Id: " + id));
         return new ResponseAnimalDto(res);
     }
