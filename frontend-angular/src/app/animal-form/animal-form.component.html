@@ -1,6 +1,8 @@
 <form (ngSubmit)="onSubmit()">
   <label for="nome">Nome do animal</label><br>
   <input id="nome" type="text" [(ngModel)]="nome" name="nome" pInputText/><br><br>
+  <label for="idade">Idade</label><br>
+  <input type="number" name="idade" id="idade" [(ngModel)]="idade" pInputText><br>
 
   <p-dropdown
     [(ngModel)]="selectedAnimal"

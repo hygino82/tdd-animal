@@ -1,0 +1,24 @@
+<p-table [value]="animalPage.content" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Tipo</th>
+      <th>Ações</th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-animal>
+    <tr>
+      <td>{{ animal.id }}</td>
+      <td>{{ animal.name }}</td>
+      <td>{{ animal.age }}</td>
+      <td>{{ animal.animalType }}</td>
+      <td>
+        <button pButton label="Editar"></button>
+        <button pButton label="Excluir"></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

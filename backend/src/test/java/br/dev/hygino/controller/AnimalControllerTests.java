@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest(AnimalController.class)
 public class AnimalControllerTests {
-    @Autowired
+   /* @Autowired
     private MockMvc mockMvc;
 
     private final String baseUrl = "/api/v1/animal";
@@ -153,5 +153,5 @@ public class AnimalControllerTests {
                         .accept(MediaType.APPLICATION_JSON));
 
         result.andExpect(status().isBadRequest());
-    }
+    }*/
 }

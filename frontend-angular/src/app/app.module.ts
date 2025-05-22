@@ -9,11 +9,15 @@ import {DropdownModule} from "primeng/dropdown";
 import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HttpClientModule} from "@angular/common/http";
+import { AnimalListComponent } from './animal-list/animal-list.component';
+import {TableModule} from "primeng/table";
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnimalFormComponent
+    AnimalFormComponent,
+    AnimalListComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     DropdownModule,
     InputTextModule,
     ButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
