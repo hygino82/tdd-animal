@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="nome">Nome do animal</label><br>
+  <input id="nome" type="text" [(ngModel)]="nome" name="nome" pInputText/><br><br>
+
+  <p-dropdown
+    [(ngModel)]="selectedAnimal"
+    name="selectedAnimal"
+    [options]="animals"
+    placeholder="Selecione um animal">
+  </p-dropdown>
+  <br><br>
+
+  <button type="submit" pButton label="Salvar"></button>
+</form>
