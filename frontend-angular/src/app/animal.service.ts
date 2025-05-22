@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
-import {AnimalPage, AnimalRequest} from "./types";
+import { Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
+import { AnimalPage, AnimalRequest } from "./types";
 
 @Injectable({
   providedIn: 'root'
@@ -18,5 +18,9 @@ export class AnimalService {
 
   findAnimals() {
     return this.http.get<AnimalPage>(this.baseUrl);
+  }
+
+  removeAnimal(id: number) {
+    return this.http.delete(`${this.baseUrl}/${id}`);
   }
 }

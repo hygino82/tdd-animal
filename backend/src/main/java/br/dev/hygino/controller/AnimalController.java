@@ -54,4 +54,11 @@ public class AnimalController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> update(@PathVariable Long id) {
+        animalService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
 }
